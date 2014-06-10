@@ -14,7 +14,7 @@
 	<script src="js/libs/modernizr-2.5.3.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
-	<script src="../jso.js"></script>
+	<script src="js/jso.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
 
@@ -39,7 +39,6 @@
 				},
 				"google": {
 					client_id: "588994829422-1i3dtqj75dfdfc7m57mc2bhkmcfbdieq.apps.googleusercontent.com",
-					redirect_uri: "page.html",
 					authorization: "https://accounts.google.com/o/oauth2/auth",
 					isDefault: true
 				},
