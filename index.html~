@@ -38,7 +38,7 @@
 					authorization: "https://www.linkedin.com/oauth"
 				},
 				"google": {
-					client_id: "541950296471-l3c03llam468opj7gljtjav8v13pi0mf.apps.googleusercontent.com",
+					client_id: "588994829422-1i3dtqj75dfdfc7m57mc2bhkmcfbdieq.apps.googleusercontent.com",
 					redirect_uri: "page.html",
 					authorization: "https://accounts.google.com/o/oauth2/auth",
 					isDefault: true
