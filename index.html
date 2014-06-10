@@ -10,7 +10,7 @@
 
 <script>
 	
-$('clickme').click(function(){
+$(function(){
 	var options = new ContactFindOptions();
 	options.filter="";
 	options.multiple=true;
@@ -20,9 +20,9 @@ $('clickme').click(function(){
 
 function onSuccess(contacts)
 {
-	for (var i=0;i<contacts.length;i++)
+	for (var i=0;i<5;i++)
 	{
-		document.write("Name: " + contacts[i].displayName);
+		$('results').prepend("<div>Name: " + contacts[i].displayName + "</div>");
 	}
 }
 
