@@ -55,38 +55,7 @@
 				</a>
 			</li>
 			<li data-role="list-divider">Tomorrow's Calendar<span class="ui-li-count">3</span></li>
-			<li>
-				<a href="#">
-				<h2>Do something</h2>
-				<p><strong>Remember something to do</strong></p>
-				<p>Things list.....</p>
-				<p class="ui-li-aside"><strong>3:50</strong>PM</p>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-				<h2>Do something</h2>
-				<p><strong>Remember something to do</strong></p>
-				<p>Things list.....</p>
-				<p class="ui-li-aside"><strong>3:50</strong>PM</p>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-				<h2>Do something</h2>
-				<p><strong>Remember something to do</strong></p>
-				<p>Things list.....</p>
-				<p class="ui-li-aside"><strong>3:50</strong>PM</p>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-				<h2>Do something</h2>
-				<p><strong>Remember something to do</strong></p>
-				<p>Things list.....</p>
-				<p class="ui-li-aside"><strong>3:50</strong>PM</p>
-				</a>
-			</li>
+
 			</ul>
 	</div>
 	<div data-role="footer">Footer</div>
