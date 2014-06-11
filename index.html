@@ -16,7 +16,7 @@
 <div data-role="page">
 	<div data-role="header">Flat Calender</div>
 	<div role="main" class="ui-content">
-			<ul data-role="listview" data-filter="true" data-inset="true">
+			<ul data-role="listview" data-filter="true" data-inset="true" id="contact_ul">
 			<li data-role="list-divider">Today's Calendar<span class="ui-li-count">5</span></li>
 			<li>
 				<a href="#">
@@ -26,23 +26,6 @@
 				<p class="ui-li-aside"><strong>3:50</strong>PM</p>
 				</a>
 			</li>
-			<li>
-				<a href="#">
-				<h2>Do something</h2>
-				<p><strong>Remember something to do</strong></p>
-				<p>Things list.....</p>
-				<p class="ui-li-aside"><strong>3:50</strong>PM</p>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-				<h2>Do something</h2>
-				<p><strong>Remember something to do</strong></p>
-				<p>Things list.....</p>
-				<p class="ui-li-aside"><strong>3:50</strong>PM</p>
-				</a>
-			</li>
-			
 			<li data-role="list-divider">Tomorrow's Calendar<span class="ui-li-count">3</span></li>
 			<li>
 				<a href="#">
@@ -80,7 +63,22 @@
 	</div>
 	<div data-role="footer">Footer</div>
 <script>
-
+	function onDeviceReady()
+	{
+		var options = new ContactFindOptions();
+		options.filter="";
+		options.multiple=true;
+		filter=["displayName"];
+		navigator.contacts.find(filter,onSuccess,onError,options);
+	}
+	function onSuccess(contacts)
+	{
+		for (var i=0;i<contacts.length;i++)
+		{
+			$('#contact_ul').innerHTML= contacts[i].displayName;
+		}
+			
+	}
 </script>
 </div>
 	
