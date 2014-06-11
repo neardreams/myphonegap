@@ -78,6 +78,9 @@
 			</ul>
 	</div>
 	<div data-role="footer">Footer</div>
+<script>
+alert(window.location);
+</script>
 </div>
 	
 </body>
