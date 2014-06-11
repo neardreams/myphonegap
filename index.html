@@ -23,9 +23,9 @@
 		}
 		function onSuccess(contacts)
 		{
-			for (var i=0;i<50.length;i++)
+			for (var i=0;i<;i++)
 			{
-				$('#contact_ul').append($('<li/>',{}).append($('<a/>',{'href':'#','text':contacts[i].displayName})));
+				$('#contact_ul').append($('<li/>',{}).append($('<a/>',{'href':'#','text':contacts[i].displayName})).append($('<p/>',{'text':contacts[i].mobile}));
 			}
 			$('#contact_ul').listview('refresh');
 			
