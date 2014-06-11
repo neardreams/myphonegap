@@ -23,12 +23,15 @@
 		}
 		function onSuccess(contacts)
 		{
-			for (var i=0;i<;i++)
+			for (var i=0;i<contacts.length;i++)
 			{
 				$('#contact_ul').append($('<li/>',{
 				})
-					.append($('<a/>',{'href': '#','text': contacts[i].displayName
-					})));
+					.append($('<a/>',{'href': '#'
+					})
+						.append($('<p/>',{'text': contacts[i].displayName
+						})
+						)));
 			}
 			$('#contact_ul').listview('refresh');
 			
