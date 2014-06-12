@@ -28,6 +28,7 @@
 				var li = $('<li/>',{}).on('click',function(){
 					alert(contacts[i].id);
 				});
+				li.attr('class','ui-btn ui-btn-icon-right ui-icon-carat-r');
 				var a = $('<a/>',{'href':'#'});
 				var p = $('<p/>',{'text':contacts[i].displayName});
 				a.append(p);
