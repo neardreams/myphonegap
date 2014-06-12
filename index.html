@@ -26,8 +26,6 @@
 			for (var i=0;i<contacts.length;i++)
 			{
 				var li = $('<li/>',{});
-				li.live('click',function(){alert(contacts[i].displayName + " click")});
-				li.live('tap',function(){alert(contacts[i].displayName + " tap")});
 				var a = $('<a/>',{'href':'#'});
 				a.attr('class','ui-btn ui-btn-icon-right ui-icon-carat-r');
 				var p = $('<p/>',{'text':contacts[i].displayName});
