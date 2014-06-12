@@ -13,12 +13,18 @@
 	<script src="cordova.js"></script>
 	<script>
 		document.addEventListener("deviceready",onDeviceReady,false);
+		$('#contact_ul').delegate('li','tap',function()
+		{
+			$.mobile.changePage($(this).find('a').attr('href'),{
+				data : {selectedIndex :
+			});
+		}
 		function onDeviceReady()
 		{
 			var options = new ContactFindOptions();
 			options.filter="";
 			options.multiple=true;
-			filter=["displayName"];
+			filter=["displayName","id"];
 			navigator.contacts.find(filter,onSuccess,onError,options);
 		}
 		function onSuccess(contacts)
@@ -26,7 +32,9 @@
 			for (var i=0;i<contacts.length;i++)
 			{
 				$('#contact_ul').append($('<li/>',{
-				})
+				}).on('click',function(){
+						alert(contacts[i].id);
+					})
 					.append($('<a/>',{'href': '#'
 					})
 						.append($('<p/>',{'text': contacts[i].displayName
