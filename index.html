@@ -28,8 +28,8 @@
 				var li = $('<li/>',{});
 				var a = $('<a/>',{'href':'#'});
 				a.attr('class','ui-btn ui-btn-icon-right ui-icon-carat-r');
-				a.on('click',function(){alert(contacts[i].displayName + " click")});
-				a.on('tap',function(){alert(contacts[i].displayName + " tap")});
+				a.live('click',function(){alert(contacts[i].displayName + " click")});
+				a.live('tap',function(){alert(contacts[i].displayName + " tap")});
 				var p = $('<p/>',{'text':contacts[i].displayName});
 				a.append(p);
 				li.append(a);
