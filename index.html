@@ -24,7 +24,7 @@
 			var options = new ContactFindOptions();
 			options.filter="";
 			options.multiple=true;
-			filter=["displayName","id"];
+			filter=["displayName"];
 			navigator.contacts.find(filter,onSuccess,onError,options);
 		}
 		function onSuccess(contacts)
@@ -32,7 +32,7 @@
 			for (var i=0;i<contacts.length;i++)
 			{
 				var li = $('<li/>',{}).on('tap',function(){
-					alert(contacts[i].id);
+					alert(contacts[i].displayName);
 				});
 				var a = $('<a/>',{'href':'#'});
 				var p = $('<p/>',{'text':contacts[i].displayName});
