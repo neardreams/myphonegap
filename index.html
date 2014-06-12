@@ -32,6 +32,8 @@
 						.append($('<p/>',{'text': contacts[i].displayName
 						})
 						)));
+				if (i%5==0)				
+					$('#contact_ul').listview('refresh');
 			}
 			$('#contact_ul').listview('refresh');
 			
