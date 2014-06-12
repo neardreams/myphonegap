@@ -31,8 +31,7 @@
 		{
 			for (var i=0;i<contacts.length;i++)
 			{
-				var li = $('<li/>',{});
-				li.on('click',function(){
+				var li = $('<li/>',{}).on('tap',function(){
 					alert(contacts[i].id);
 				});
 				$('#contact_ul').append(li
