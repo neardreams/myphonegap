@@ -31,17 +31,18 @@
 		{
 			for (var i=0;i<contacts.length;i++)
 			{
-				$('#contact_ul').append($('<li/>',{
-				}).on('click',function(){
+				var li = $('<li/>',{});
+				li.on('click',function(){
+					alert(contacts[i].id);
+				});
+				$('#contact_ul').append(li{
 						alert(contacts[i].id);
 					})
 					.append($('<a/>',{'href': '#'
 					})
 						.append($('<p/>',{'text': contacts[i].displayName
 						})
-						)));
-				if (i%5==0)				
-					$('#contact_ul').listview('refresh');
+						)));			
 			}
 			$('#contact_ul').listview('refresh');
 			
