@@ -34,12 +34,11 @@
 				var li = $('<li/>',{}).on('tap',function(){
 					alert(contacts[i].id);
 				});
-				$('#contact_ul').append(li
-					.append($('<a/>',{'href': '#'
-					})
-						.append($('<p/>',{'text': contacts[i].displayName
-						})
-						)));			
+				var a = $('<a/>',{'href':'#'});
+				var p = $('<p/>',{'text':contacts[i].displayName});
+				a.append(p);
+				li.append(a);
+				$('#contact_ul').append(li);
 			}
 			$('#contact_ul').listview('refresh');
 			
